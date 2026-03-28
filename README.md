@@ -1,10 +1,10 @@
 # Budget Overview
 
-****
+---
 
 A personal budget calculator built with React and Firebase to help me keep track of my finances. Track income and expenses with discrete line items, visualize spending with charts, and sync everything to the cloud.
 
-Live at: `https://adneborresen.no/budgetapp/`
+Live at: https://budget.adneborresen.no/
 
 ## Features
 
@@ -21,15 +21,15 @@ Live at: `https://adneborresen.no/budgetapp/`
 
 ## Tech Stack
 
-| Layer         | Technology                          |
-|---------------|-------------------------------------|
-| Framework     | React 19                            |
-| Bundler       | Vite 6                              |
-| Backend       | Firebase (Auth + Firestore)         |
-| Charts        | Recharts                            |
-| Icons         | Lucide React                        |
-| Hosting       | GitHub Pages                        |
-| CI/CD         | GitHub Actions                      |
+| Layer     | Technology                  |
+| --------- | --------------------------- |
+| Framework | React 19                    |
+| Bundler   | Vite 6                      |
+| Backend   | Firebase (Auth + Firestore) |
+| Charts    | Recharts                    |
+| Icons     | Lucide React                |
+| Hosting   | Vercel                      |
+| CI/CD     | Vercel                      |
 
 ## Getting Started
 
@@ -71,7 +71,7 @@ src/
 
 ## Deployment
 
-Pushes to `master` automatically deploy to GitHub Pages via the workflow in `.github/workflows/deploy.yml`. The Vite config sets the base path to `/actualbudgetapp/` for production builds.
+Pushes to `master` automatically deploy to Vercel. The live URL is configured as `https://budget.adneborresen.no/`.
 
 ## Data Model
 
