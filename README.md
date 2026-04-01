@@ -2,22 +2,24 @@
 
 ---
 
-A personal budget calculator built with React and Firebase to help me keep track of my finances. Track income and expenses with discrete line items, visualize spending with charts, and sync everything to the cloud...
+A personal budgeter built with React and Firebase to help me keep track of my finances. 
+
+Track income and expenses with discrete line items, visualize spending with charts, and sync everything to the cloud.
 
 Live at: https://budget.adneborresen.no/
 
 ## Features
 
-- **Item-based budgeting** -- each expense is a named line item (Rent, Netflix, Groceries) with its own amount and frequency
+- **Item-based budgeting** - each expense is a named line item (Rent, Netflix, Groceries) with its own amount and frequency
 - **Two item modes**:
-  - *Fixed Recurring* -- manual amount + frequency (daily/weekly/monthly/yearly)
-  - *Track to Learn* -- log purchases over time, the app infers your spending pattern and suggests a budget allocation
-- **Frequency conversion** -- view all amounts normalized to daily, weekly, monthly, or yearly
-- **Extraordinary toggle** -- exclude one-off items from your core budget to see the baseline
-- **Charts** -- pie chart for expense distribution, bar chart for category totals (via Recharts)
-- **Cloud sync** -- all data persisted to Firebase Firestore in real-time
-- **Multi-language** -- Norwegian (default) and English
-- **Google Sign-In** -- Firebase Authentication with Google OAuth
+  - *Fixed Recurring* - manual amount + frequency (daily/weekly/monthly/yearly)
+  - *Track to Learn* - log purchases over time, the app infers your spending pattern and suggests a budget allocation
+- **Frequency conversion** - view all amounts normalized to daily, weekly, monthly, or yearly
+- **Extraordinary toggle** - exclude one-off items from your core budget to see the baseline
+- **Charts** - pie chart for expense distribution, bar chart for category totals (via Recharts)
+- **Cloud sync** - all data persisted to Firebase Firestore in real-time
+- **Multi-language** - Norwegian (default) and English
+- **Google Sign-In** - Firebase Authentication with Google OAuth
 
 ## Tech Stack
 
@@ -93,4 +95,4 @@ categories: [
 
 ## Security
 
-Firestore rules enforce that each user can only read/write their own `/users/{uid}` document. The Firebase API key in `firebase.js` is a client-side key scoped by Firestore rules -- this is standard for Firebase web apps.
+Firestore rules enforce that each user can only read/write their own `/users/{uid}` document. Please note that I may theoretically have access to your data since I am the owner of the Firebase project.
